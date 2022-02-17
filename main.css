@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.calc_body {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #212121;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+.calc_area {
+    background-color: #fafafa;
+    color: #212121;
+    border-radius: 8px 8px 0 0;
+    padding: 20px;
+    font-size: 2.5rem;
+    text-align: right;
+}
+#symbol {
+    text-align: center;
+}
+#num1 {
+    text-align: center;
+}
+#num2 {
+    text-align: center;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.buttons button {
+    padding: 30px;
+    font-size: 1.5rem;
+    background-color: #212121;
+    color: #fafafa;
+    text-align: center;
+    border: none;
+    transition: .4s all linear;
+}
+.buttons button:hover {
+    background-color: #413f3f;
+}
+.buttons button:active {
+    background-color: #f7efef;
+}
+
+/* メディアクエリを追加 */
+@media screen and (max-width :767px) {
+    
+}
